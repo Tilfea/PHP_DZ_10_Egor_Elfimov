@@ -21,7 +21,6 @@
 .cat1 {
     display: flex;
     background-color: #ebe7e7;
-    height: 30%;
     margin: 10px 0;
     padding: 10px 15px;
     flex-wrap: wrap;
@@ -44,7 +43,7 @@
     margin: 10px 0;
     padding: 10px 10px;
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .lostItem {

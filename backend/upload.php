@@ -4,7 +4,8 @@ require_once '../frontend/header.html';
 require_once './connection.php';
 require_once './function.php';
 if (empty($_COOKIE['LogIn'])){
-    ?><p class='all'>Пожалуйста, войдите в систему!</p>
+    ?><p class='all'>Пожалуйста, <a href='./LogIn.php'>войдите</a> в систему или пройдите <a href='./LogIn.php'>регистрацию</a>!</p>
+    
     <?php 
 } else {
 ?>

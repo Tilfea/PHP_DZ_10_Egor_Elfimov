@@ -20,7 +20,7 @@ function translit_path($value)
 
 	return $value;
 };
-
+// выгрузка баз
 function upload($result1){
     $date = date("Y-m-d-H.i.s");
     $name = $_POST['example'] . $date;
@@ -28,6 +28,6 @@ function upload($result1){
         file_put_contents("../upload/$name.csv", iconv('utf-8', 'windows-1251',(implode(";", $row))) . PHP_EOL, FILE_APPEND);
     };
     ?>
-    <p class='end'><?php echo "Файл \"$name\" сформирован!";?></p>
+    <p class='end'><?php echo "Файл \"$name\" сформирован";?> и доступен по адресу C:\OSPanel\domains\lesson_10\upload</p>
     <?php
 };

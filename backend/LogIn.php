@@ -5,9 +5,9 @@ require_once './connection.php';
 require_once './function.php';
 
 if (!empty($_COOKIE['LogIn'])){
-    ?><p class='all'>Добро пожаловать!</p>
+    ?><p class='up'>Добро пожаловать!</p>
         
-        <form class='all' method='post'>
+        <form class='up' method='post'>
         <div class="mb-3">
             <input type="hidden" name="logOut" value="logOut" />
             <button type="submit" class="btn btn-primary">Выйти</button>
